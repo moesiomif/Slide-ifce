@@ -1,6 +1,5 @@
 \documentclass[12pt,aspectratio=169]{beamer}
 \usepackage[utf8]{inputenc}
-%\usepackage[T1]{fontenc}
 \usepackage{ccfonts,eulervm,times}
 \usepackage[portuges]{babel}
 \usepackage{pdfpages}
@@ -63,7 +62,7 @@
 \usepackage{pstricks,tikz,pst-node,pst-plot,pst-eucl,pst-func}
 \usepackage[all,cmtip]{xy}
 \usetikzlibrary{fit, shapes.geometric, arrows}
-\title{Aula 5 -- Introdução ao R}
+\title{Aula  -- Introdução ao R}
 \subtitle{Estatística Computacional}
 %\subtitle{Matrizes}
 \logo{\includegraphics[scale=0.06]{Figuras/logo_ifce.png}}
@@ -74,16 +73,6 @@
 \usepackage[url,doi,style=numeric,backend=biber]{biblatex}
 \addbibresource{biblio.bib}
 %==========================================================================================
-% \mode<beamer>{
-%\usetheme{AnnArbor}
-%\usetheme{Antibes}
-%\usetheme{Bergen}
-%\usetheme{Berkeley} %bom
- %\usetheme{PaloAlto}
-%\usetheme{Goettingen} %bom
-%\usetheme{Berlin} %muito bom
- %usetheme{Copenhagen} %bom
-%\usetheme{CambridgeUS}
 \useoutertheme{infolines} %tema externo
 %\useoutertheme{tree} %tema externo
 
@@ -91,10 +80,7 @@
 \useinnertheme{circles}
 
 \definecolor{ifce}{rgb}{1,0.7,0.5} %{vermelho,verde,azul}
-%\usecolortheme{dolphin} %tema de cor(todas as cores=voa)(mdofica externo=marinho)(modifica externo=marinho)
 \usecolortheme{spruce}
-%\usecolortheme{rose}
-%\usecolortheme{seahorse}
 \setbeamercolor{normal text}{fg=black, bg=white}
 \setbeamercolor{title}{fg=black!90, bg=green!20}
 \setbeamercolor{author}{fg=red!120}
@@ -146,15 +132,10 @@
 %=================================================
 \section{Introdução}
 %=================================================
-%=================================================
-%=================================================
-%=================================================
 \begin{frame}[fragile]
 		\frametitle{Tipos de Estruturas\cite{crespo2017est,crawley2007,r}}
 		\framesubtitle{Vetores ($vector$)}
 Os vetores ($vector$) são objetos que armazenam um ou mais elementos, do tipo numeric, character ou logical.\pause
-
-%Os vetores podem ser criados com a função c, que concaneta objetos. Um vetor só suporta um único tipo de dados. Os vetores ainda possuem duas característica, uma delas é o comprimento que pode ser encontrado com a função length a segunda dela o nomes de cada elemento, acessada pela função names.
 
 \end{frame}
 %=================================================
@@ -170,7 +151,6 @@ Como um vetor só tem uma dimensão, para acessar um determinado valor do vetor 
 		\begin{itemize}
 				\item Serve para designar categorias para um vetor.\pause
 				\item Essa classe é semelhante a um vetor da classe character;
-						%mas tem importancia maior nas análises estatísticas já que designam um número finito (predefinido) de categorias. 
 		\end{itemize}
 
 \end{frame}
@@ -191,7 +171,6 @@ Como um vetor só tem uma dimensão, para acessar um determinado valor do vetor 
 				\item Armazenar vetores de diferentes tipos (numeric, character ou logical);\pause
 				\item O comprimento de todos vetores de um data.frame deve ser igual.
 		\end{itemize}
-%Os data.frames possuem duas dimensões que podem ser encontradas com a função dim, nrow e ncol. Os nomes das linhas e colunas podem ser acessada pelas função rownames e colnames respectivamente. As funções str, head e tail mostram parte do data.frame para que sejá possível conferir os dados sem a nescessidade de visualizar a tabela completa.
 \end{frame}
 %=================================================
 \begin{frame}[fragile]
